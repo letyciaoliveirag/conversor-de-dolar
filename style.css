@@ -134,8 +134,17 @@ p {
     padding: 2rem 1rem;
   }
 
+  .quadroDivPai {
+    gap: 0.5rem;
+  }
+
+  .quadroDivPai input {
+    min-width: 0;
+    width: 100%;
+  }
+
   p {
-    font-size: 1rem;
+    font-size: 0.875rem;
     text-align: center;
   }
 }
