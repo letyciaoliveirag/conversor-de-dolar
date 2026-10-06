@@ -139,11 +139,6 @@ p {
     position: relative;
   }
 
-  .quadroDivPai::before {
-    content: "R$";
-    color: var(--cor-texto-destaque);
-  }
-
   .quadroDivPai input {
     min-width: 0;
     width: 100%;
