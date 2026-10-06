@@ -136,6 +136,12 @@ p {
 
   .quadroDivPai {
     gap: 0.5rem;
+    position: relative;
+  }
+
+  .quadroDivPai::before {
+    content: "R$";
+    color: var(--cor-texto-destaque);
   }
 
   .quadroDivPai input {
@@ -145,6 +151,7 @@ p {
 
   p {
     font-size: 0.875rem;
+    font-weight: 600;
     text-align: center;
   }
 }
