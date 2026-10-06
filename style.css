@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-primaria: #f1eded;
+  --cor-secundaria: #8e3232;
+  --cor-terciaria: #32528e;
+
+  --cor-background: #4c0e0e4e;
+  --cor-texto-destaque: #234372;
+  --cor-background-input: #e3dede;
+
+  --fonte-principal: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-image: url(./assets/eua.jpg);
+  background-position: center;
+  background-size: cover;
+  color: var(--cor-primaria);
+}
+
+h1 {
+  font-family: var(--fonte-principal);
+  font-size: 1.875rem;
+}
+
+.divPai {
+  width: min(90%, 25rem);
+  min-height: 19.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--cor-background);
+  border-radius: 1.25rem;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+
+.quadroDivPai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  color: var(--cor-texto-destaque);
+  width: min(100%, 18.75rem);
+  min-height: 3.75rem;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--cor-background-input);
+  border-radius: 0.625rem;
+  font-family: var(--fonte-principal);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.quadroDivPai input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1.125rem;
+  font-family: var(--fonte-principal);
+}
+
+button {
+  flex: 1;
+  min-width: 0;
+  min-height: 3.125rem;
+  border-radius: 0.625rem;
+  outline: none;
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+p {
+  font-family: var(--fonte-principal);
+  font-size: 1.25rem;
+  font-weight: 200;
+  padding: 0.5rem;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 18.75rem;
+}
+
+.button1 {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+}
+
+.button1:hover {
+  background-color: var(--cor-secundaria);
+}
+
+.button2 {
+  color: var(--cor-secundaria);
+  font-weight: 600;
+}
+
+.button2:hover {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .divPai {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
